@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function fn(){
+        var max=10;
+        return function bar (x){
+            if(x>max){
+                console.log(x);
+            }
+        }
+    }
+    var f1 =fn();
+    f1(15);
+    var max=10;
+    fum=function(x){
+        if(x>max){
+            console.log(x);
+        }
+    };
+    (function(f){
+        var max=100;
+        f(15)
+    })(fum);
+</script>
+<body>
+
+</body>
+</html>

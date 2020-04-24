@@ -2,24 +2,53 @@
     <body>
         <!-- <script src="./stat.js">//链接外部stat.js</script>
     <script src="./underscore.js">//链接外部underscore.js</script> -->
-    <script>
+    <!-- <script> -->
         
-        var value=11;
-    var lnitvelue=22;
-  function addittion(){
-      var value=lnitvelue;
-      return function add(x){
-            value=value+x;
-            if(value>=99){
-                console.log(value)
-            };
-      };
+//         var value=11;
+//     var lnitvelue=22;
+//   function addittion(){
+//       var value=lnitvelue;
+//       return function add(x){
+//             value=value+x;
+//             if(value>=99){
+//                 console.log(value)
+//             };
+//       };
       
-  };
-  var func=addittion();
-  func(33);
-  func(44);
-        </script>
-     <img  src="12.jpg" />
+//   };
+//   var func=addittion();
+//   func(33);
+//   func(44);
+        <!-- </script> -->
+<!-- //      <img  src="12.jpg" /> -->
+<ul>
+</ul>
+ <script src="jquery-3.4.1.js"></script>
+ <script src="underscore.js"></script>
+
+<script>
+
+
+
+
+
+$(function(){
+
+
+
+$.get("./data.json",function(data){
+console.log(result)
+});
+_.each(data, function(item){
+ $("ul").append("<li>"+item.name+"(学分："+item.credit+")"+"</li>");
+});
+
+
+})
+
+
+
+
+</script>
     </body>
 </html>
